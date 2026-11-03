@@ -36,7 +36,7 @@ raco pkg install pcap
 ```
 
 读取你自己的经典 pcap 文件可使用 `(pcap-read-file "capture.pcap")`。
-[可执行入门示例](examples/quickstart.rkt)还会断言数据包数量、时间戳、
+[可执行入门示例](pcap/examples/quickstart.rkt)还会断言数据包数量、时间戳、
 原始长度、EtherType 和载荷解码结果。
 
 ## 范围
@@ -72,7 +72,7 @@ raco pkg install pcap
 ```sh
 raco pkg install --auto --link "$(pwd)"
 raco test -p pcap
-racket examples/quickstart.rkt
+racket pcap/examples/quickstart.rkt
 raco setup --check-pkg-deps -l pcap
 ```
 
