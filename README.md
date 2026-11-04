@@ -34,7 +34,7 @@ memory; it requires no network privileges, external capture file or hardware.
 ```
 
 To read your own classic capture, use `(pcap-read-file "capture.pcap")`.
-The checked-in [executable quickstart](examples/quickstart.rkt) asserts the
+The checked-in [executable quickstart](pcap/examples/quickstart.rkt) asserts the
 packet count, timestamp, original length, EtherType and decoded payload.
 
 ## Scope
@@ -64,7 +64,7 @@ From the repository root (Racket installed):
 ```sh
 raco pkg install --auto --link "$(pwd)"
 raco test -p pcap
-racket examples/quickstart.rkt
+racket pcap/examples/quickstart.rkt
 raco setup --check-pkg-deps -l pcap
 ```
 
